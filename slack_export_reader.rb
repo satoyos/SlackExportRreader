@@ -27,9 +27,10 @@ class SlackExportReader
         @jsons.append(json_data)
       end
     end
+    return self
   end
 
-  def extract_payment_records()
+  def extract_payment_records
     results = []
     for json in jsons
       for item in json
@@ -47,4 +48,13 @@ class SlackExportReader
 
     return results
   end
+end
+
+if __FILE__ == $0
+  if ARGV.length != 1
+    puts "usage: ruby #{__FILE__} folder_path_name"
+  end
+  reader = SlackExportReader.new(folder_path: ARGV[0])
+  records = reader.load_json_from_files.extract_payment_records
+  pp records
 end
