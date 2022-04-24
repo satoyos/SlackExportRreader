@@ -38,7 +38,7 @@ class SlackExportReader
         next unless item[:user_profile][:first_name] == "John"
         results.append(
           PaymentRecord.new(
-            date_str: "2030/3/22",
+            time_stamp: item[:ts],
             content_str: item[:text]
           )
         )

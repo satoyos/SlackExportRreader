@@ -26,6 +26,6 @@ class TestSlackExportReader < Minitest::Test
     assert_instance_of(PaymentRecord, first_record)
     assert_equal(58310, first_record.price)
     assert_equal("定期代", first_record.goods)
-    # 次はtimestampの扱いだな。"ts": "1648614270.636359"ってなんなの？？
+    assert_equal(2022, first_record.date.year)
   end
 end
