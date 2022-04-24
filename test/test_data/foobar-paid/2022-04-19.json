@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "DA5CF420-F6C3-4666-BB9D-89F639088E4A",
+        "type": "message",
+        "text": "ご飯　900",
+        "user": "U0L982DP1",
+        "ts": "1650435520.802599",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "776867a65322",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-11-07\/268310191717_776867a65322a2df4d2b_72.png",
+            "first_name": "John",
+            "real_name": "John Smith",
+            "display_name": "foobar",
+            "team": "T0863NDCM",
+            "name": "foobar",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t\/+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ご飯　900"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

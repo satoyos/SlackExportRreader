@@ -1,0 +1,154 @@
+[
+    {
+        "client_msg_id": "1eebbb90-d4c0-47a9-8a6a-01568d6b3180",
+        "type": "message",
+        "text": "どもども！",
+        "user": "U0863NDD3",
+        "ts": "1649851403.584059",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "cc9b09a644e0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-07-26\/8208407574_cc9b09a644e0155808fd_72.jpg",
+            "first_name": "Yoshifumi",
+            "real_name": "Yoshifumi Sato",
+            "display_name": "yoshi",
+            "team": "T0863NDCM",
+            "name": "yoshi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6He",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どもども！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ea52241b-dba0-4722-a9b2-d53941d8d07c",
+        "type": "message",
+        "text": "その案、いいね！",
+        "user": "U0863NDD3",
+        "ts": "1649851442.821599",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "cc9b09a644e0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-07-26\/8208407574_cc9b09a644e0155808fd_72.jpg",
+            "first_name": "Yoshifumi",
+            "real_name": "Yoshifumi Sato",
+            "display_name": "yoshi",
+            "team": "T0863NDCM",
+            "name": "yoshi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uUecb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "その案、いいね！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "62b040a7-0cfa-4ca4-8e1e-04f2fe350cda",
+        "type": "message",
+        "text": "いいね",
+        "user": "U0863NDD3",
+        "ts": "1649851983.660099",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "cc9b09a644e0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-07-26\/8208407574_cc9b09a644e0155808fd_72.jpg",
+            "first_name": "Yoshifumi",
+            "real_name": "Yoshifumi Sato",
+            "display_name": "yoshi",
+            "team": "T0863NDCM",
+            "name": "yoshi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zIaE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いいね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "17b3e808-419f-4888-a9cd-d6954b28a919",
+        "type": "message",
+        "text": "の案、いいね！",
+        "user": "U0863NDD3",
+        "ts": "1649853380.121419",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "cc9b09a644e0",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-07-26\/8208407574_cc9b09a644e0155808fd_72.jpg",
+            "first_name": "Yoshifumi",
+            "real_name": "Yoshifumi Sato",
+            "display_name": "yoshi",
+            "team": "T0863NDCM",
+            "name": "yoshi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GN4gF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "の案、いいね！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

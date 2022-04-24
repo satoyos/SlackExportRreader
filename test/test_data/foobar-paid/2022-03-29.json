@@ -1,0 +1,80 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_´®join",
+        "ts": "1648611277.113029",
+        "user": "U0863NDD3",
+        "text": "<@U0863NDD3> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_purpose",
+        "ts": "1648611277.372329",
+        "user": "U0863NDD3",
+        "text": "set the channel description: Johnが払ったお金",
+        "purpose": "Johnが払ったお金"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1648611296.932429",
+        "user": "U0NKY1M7F",
+        "text": "<@U0NKY1M7F> has joined the channel",
+        "inviter": "U0863NDD3"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1648611296.993359",
+        "user": "U0L982DP1",
+        "text": "<@U0L982DP1> has joined the channel",
+        "inviter": "U0863NDD3"
+    },
+    {
+        "client_msg_id": "D4DBC623-5C11-4B3E-AA1B-79E60498EA22",
+        "type": "message",
+        "text": "定期代　58310",
+        "user": "U0L982DP1",
+        "ts": "1648614270.636359",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "776867a65322",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-11-07\/268310191717_776867a65322a2df4d2b_72.png",
+            "first_name": "John",
+            "real_name": "John Smith",
+            "display_name": "foobar",
+            "team": "T0863NDCM",
+            "name": "foobar",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qwa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "定期代　58310"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0863NDD3"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]
