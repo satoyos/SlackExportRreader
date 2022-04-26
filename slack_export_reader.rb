@@ -30,7 +30,7 @@ class SlackExportReader
     return self
   end
 
-  def extract_payment_records
+  def extract_payment_records(from: nil, to: DateTime.now())
     results = []
     for json in jsons
       for item in json
@@ -45,7 +45,8 @@ class SlackExportReader
         )
       end
     end
-
+    from = Time.at(0).to_datetime if from.nil?
+    results = results.select{|rec| rec.date >= from and rec.date <= to}
     return results
   end
 end
