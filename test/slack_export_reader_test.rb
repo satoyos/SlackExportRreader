@@ -20,7 +20,7 @@ class TestSlackExportReader < Minitest::Test
     reader.load_json_from_files
     assert_equal(2, reader.jsons.length)
     pp reader.jsons[0]
-    records = reader.extract_payment_records()
+    records = reader.extract_payment_records(first_name: "John")
     assert_equal(records.length, 2)
     first_record = records[0]
     assert_instance_of(PaymentRecord, first_record)
@@ -32,10 +32,10 @@ class TestSlackExportReader < Minitest::Test
   def test_extract_payment_records_in_range()
     reader = SlackExportReader.new(folder_path:'test/test_data/foobar-paid')
     reader.load_json_from_files
-    records = reader.extract_payment_records(from: DateTime.new(2022, 4, 1))
+    records = reader.extract_payment_records(first_name: "John", from: DateTime.new(2022, 4, 1))
     assert_equal(1, records.length)
     assert_equal(4, records[0].date.month)
-    records = reader.extract_payment_records(to: DateTime.new(2022, 4, 1))
+    records = reader.extract_payment_records(first_name: "John", to: DateTime.new(2022, 4, 1))
     assert_equal(1, records.length)
     assert_equal(3, records[0].date.month)
   end

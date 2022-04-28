@@ -30,13 +30,13 @@ class SlackExportReader
     return self
   end
 
-  def extract_payment_records(from: nil, to: DateTime.now())
+  def extract_payment_records(first_name:, from: nil, to: DateTime.now())
     results = []
     for json in jsons
       for item in json
         next unless item[:type] == "message"
         next if item[:subtype]
-        next unless item[:user_profile][:first_name] == "John"
+        next unless item[:user_profile][:first_name] == first_name
         results.append(
           PaymentRecord.parse(
             time_stamp: item[:ts],
