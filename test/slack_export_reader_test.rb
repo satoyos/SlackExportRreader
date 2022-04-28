@@ -19,7 +19,7 @@ class TestSlackExportReader < Minitest::Test
     assert_equal(reader.files.length, 2)
     reader.load_json_from_files
     assert_equal(2, reader.jsons.length)
-    pp reader.jsons[0]
+    # pp reader.jsons[0]
     records = reader.extract_payment_records(first_name: "John")
     assert_equal(records.length, 2)
     first_record = records[0]
