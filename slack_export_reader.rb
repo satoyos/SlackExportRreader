@@ -30,7 +30,9 @@ class SlackExportReader
     return self
   end
 
-  def extract_payment_records(first_name:, from: nil, to: DateTime.now())
+  def extract_payment_records(first_name: nil, from: nil, to: DateTime.now())
+    first_name = ENV['SPENDER'] if first_name.nil?
+    raise("first_name must be given to extra_payment_recored, as an argument or Environtment Variable 'SPENDER") if first_name.nil?
     results = []
     for json in jsons
       for item in json
@@ -55,7 +57,21 @@ if __FILE__ == $0
   if ARGV.length != 1
     puts "usage: ruby #{__FILE__} folder_path_name"
   end
+
+  def stdout_record_in_csv_formst(recs)
+    total_price = 0
+    puts '入力日,品目,価格'
+    for rec in recs
+      date_str = rec.date.strftime("%Y/%m/%d")
+      puts "#{date_str},#{rec.goods},#{rec.price}"
+      total_price += rec.price
+    end
+    puts ",合計,#{total_price}"
+  end
+
   reader = SlackExportReader.new(folder_path: ARGV[0])
-  records = reader.load_json_from_files.extract_payment_records
-  pp records
+  records = reader.load_json_from_files
+                  .extract_payment_records()
+  # pp records
+  stdout_record_in_csv_formst(records)
 end

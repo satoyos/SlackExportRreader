@@ -39,6 +39,15 @@ class TestSlackExportReader < Minitest::Test
     assert_equal(1, records.length)
     assert_equal(3, records[0].date.month)
   end
+
+  def test_extract_payment_record_with_default_name_in_ENV
+    ENV['SPENDER'] = "John"
+    reader = SlackExportReader.new(folder_path:'test/test_data/foobar-paid')
+    reader.load_json_from_files
+    records = reader.extract_payment_records()
+    assert_equal(2, records.count)
+  end
+
 end
 
 # あとは、有効なログを拾ってくる際に見ているfirst_nameを変更できるようにする
