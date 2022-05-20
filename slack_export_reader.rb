@@ -49,7 +49,7 @@ class SlackExportReader
     end
     from = Time.at(0).to_datetime if from.nil?
     results = results.select{|rec| rec.date >= from and rec.date <= to}
-    return results
+    return results.sort{|x, y| x.date <=> y.date}
   end
 end
 
