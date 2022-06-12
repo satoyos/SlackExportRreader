@@ -29,6 +29,48 @@ class TestSlackExportReader < Minitest::Test
     assert_equal(2022, first_record.date.year)
   end
 
+  def test_extract_payment_records_without_goods
+    # when
+    reader = SlackExportReader.new(folder_path: 'test/test_data/whtiout-split-space')
+    # then
+    assert_equal(1, reader.files.length)
+    # when
+    reader.load_json_from_files
+    records = reader.extract_payment_records(first_name: "John")
+    # then
+    assert_equal(1, records.size)
+    assert_equal('ご飯', records[0].goods)
+    assert_equal(559, records[0].price)
+  end
+
+  def test_extract_payment_records_only_price
+    # when
+    reader = SlackExportReader.new(folder_path: 'test/test_data/price_only_data')
+    # then
+    assert_equal(1, reader.files.length)
+    # when
+    reader.load_json_from_files
+    records = reader.extract_payment_records(first_name: "John")
+    # then
+    assert_equal(1, records.size)
+    rec = records[0]
+    assert_equal('ご飯', rec.goods)
+  end
+
+  def test_extract_payment_records_multi_prices
+    # when
+    reader = SlackExportReader.new(folder_path: 'test/test_data/multi_prices')
+    # then
+    assert_equal(1, reader.files.length)
+    # when
+    reader.load_json_from_files
+    records = reader.extract_payment_records(first_name: "John")
+    # then
+    assert_equal(2, records.size)
+    rec = records[1]
+    assert_equal(900, rec.price)
+  end
+
   def test_extract_payment_records_in_range()
     reader = SlackExportReader.new(folder_path:'test/test_data/foobar-paid')
     reader.load_json_from_files

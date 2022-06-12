@@ -39,12 +39,15 @@ class SlackExportReader
         next unless item[:type] == "message"
         next if item[:subtype]
         next unless item[:user_profile][:first_name] == first_name
-        results.append(
-          PaymentRecord.parse(
-            time_stamp: item[:ts],
-            content_str: item[:text]
+        texts = item[:text].split(/\R|,/)
+        for text in texts
+          results.append(
+            PaymentRecord.parse(
+              time_stamp: item[:ts],
+              content_str: text
+            )
           )
-        )
+        end
       end
     end
     from = Time.at(0).to_datetime if from.nil?

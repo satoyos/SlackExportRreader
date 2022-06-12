@@ -1,0 +1,40 @@
+[
+    {
+        "client_msg_id": "83557B3F-85C7-4210-9082-8302E3D1197E",
+        "type": "message",
+        "text": "ご飯559",
+        "user": "U0L982DP1",
+        "ts": "1653435925.028209",
+        "team": "T0863NDCM",
+        "user_team": "T0863NDCM",
+        "source_team": "T0863NDCM",
+        "user_profile": {
+            "avatar_hash": "776867a65322",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-11-07\/268310191717_776867a65322a2df4d2b_72.png",
+            "first_name": "John",
+            "real_name": "John Smith",
+            "display_name": "john",
+            "team": "T0863NDCM",
+            "name": "john",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qys",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ご飯559"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
